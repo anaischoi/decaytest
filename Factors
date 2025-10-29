@@ -1,0 +1,71 @@
+from ipywidgets import Button, Output
+from IPython.display import display
+
+# Button for Sugar
+sugar_button = Button(description="Sugar")
+sugar_output = Output()
+
+def on_sugar_button_clicked(b):
+    with sugar_output:
+        sugar_output.clear_output() # Clear the output before printing
+        print("Sugar increases the risk of tooth decay. It feeds bacteria in the mouth that produce acid, which softens the tooth enamel (protective coating) and creates cavities. Plaque is a sticky film on teeth that forms on teeth. Sugars make this plaque more dangerous by providing fuel for the acid-producing bacteria. ")
+
+sugar_button.on_click(on_sugar_button_clicked)
+display(sugar_button, sugar_output)
+
+
+# Button for Brushing
+brushing_button = Button(description="Brushing")
+brushing_output = Output()
+
+def on_brushing_button_clicked(b):
+    with brushing_output:
+        brushing_output.clear_output() # Clear the output before printing
+        print(" Brushing your teeth with fluoride toothpaste helps prevent cavities by removing plaque and bacteria. the fluoride strengthens tooth enamel and helps repair early-stage damage. Regular brushing, ideally after meals, removes the plaque that produces acid that can break down enamel. ")
+
+brushing_button.on_click(on_brushing_button_clicked)
+display(brushing_button, brushing_output)
+
+
+# Button for Flossing
+flossing_button = Button(description="Flossing")
+flossing_output = Output()
+
+def on_flossing_button_clicked(b):
+    with flossing_output:
+        flossing_output.clear_output() # Clear the output before printing
+        print("hello world ")
+
+flossing_button.on_click(on_flossing_button_clicked)
+display(flossing_button, flossing_output)
+
+
+
+
+# Button for water
+water_button = Button(description="Water")
+water_output = Output()
+
+def on_water_button_clicked(b):
+    with water_output:
+        water_output.clear_output() # Clear the output before printing
+        print("hello world sigma ")
+
+water_button.on_click(on_water_button_clicked)
+display(water_button, water_output)
+
+
+
+
+
+# Button for Extra
+extra_button = Button(description="Extra")
+extra_output = Output()
+
+def on_extra_button_clicked(b):
+    with extra_output:
+        extra_output.clear_output() # Clear the output before printing
+        print("hello world 67 ")
+
+extra_button.on_click(on_extra_button_clicked)
+display(extra_button, extra_output)
